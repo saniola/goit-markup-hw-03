@@ -1,0 +1,169 @@
+/* Typography */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--slate);
+  background-color: var(--white);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.logo {
+  color: var(--navy-blue);
+  font-family: var(--second-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--iris);
+}
+
+.logo.logo-footer {
+  color: var(--white);
+}
+
+.nav-item {
+  color: var(--navy-blue);
+  font-weight: 500;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--ocean);
+}
+
+.contact {
+  color: var(--slate);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--ocean);
+}
+
+.phone span {
+  margin: 0 5px;
+}
+
+.hero-title {
+  color: var(--white);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--ocean);
+}
+
+.service-title {
+  color: var(--navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.service-text {
+  color: var(--slate);
+}
+
+.portfolio-title,
+.team-title {
+  color: var(--navy-blue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11111;
+  text-transform: capitalize;
+}
+
+.team-member {
+  color: var(--navy-blue);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.team-position {
+  text-align: center;
+  color: var(--slate);
+}
+
+.portfolio-group {
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  background: var(--cloud);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--iris);
+  cursor: pointer;
+}
+
+.portfolio-group.active {
+  background: var(--ocean);
+  color: var(--white);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+}
+
+.portfolio-type {
+  color: var(--slate);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
