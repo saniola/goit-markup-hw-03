@@ -76,11 +76,14 @@ body {
   margin: 0 5px;
 }
 
+.hero {
+  background-color: var(--navy-blue);
+}
+
 .hero-title {
   color: var(--white);
   text-align: center;
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07143;
   letter-spacing: 0.02em;
 }
@@ -112,12 +115,15 @@ body {
   color: var(--slate);
 }
 
+.team {
+  background-color: var(--cloud);
+}
+
 .portfolio-title,
 .team-title {
   color: var(--navy-blue);
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11111;
   text-transform: capitalize;
 }
@@ -126,6 +132,7 @@ body {
   color: var(--navy-blue);
   text-align: center;
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
 }
 
@@ -146,7 +153,9 @@ body {
   cursor: pointer;
 }
 
-.portfolio-group.active {
+.portfolio-group.active,
+.portfolio-group:hover,
+.portfolio-group:focus {
   background: var(--ocean);
   color: var(--white);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
@@ -162,6 +171,10 @@ body {
 
 .portfolio-type {
   color: var(--slate);
+}
+
+.footer {
+  background-color: var(--navy-blue);
 }
 
 .footer-text {
