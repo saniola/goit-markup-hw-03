@@ -172,7 +172,7 @@ img {
 }
 
 .portfolio-group {
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--cornflower);
   border-radius: 4px;
   padding: 12px 24px;
   background: var(--cloud);
@@ -221,6 +221,7 @@ img {
 
 header {
   padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .footer {
@@ -230,7 +231,7 @@ header {
 .nav-list {
   display: flex;
   align-items: baseline;
-  gap: 40px
+  gap: 40px;
 }
 
 .contacts {
@@ -242,6 +243,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer-container {
@@ -259,13 +261,14 @@ header {
   gap: 48px;
 }
 
+.portfolio,
 .services,
-.team  {
-  padding: 120px 0;
+.hero {
+  margin-bottom: 120px;
 }
 
-.portfolio {
-  padding-bottom: 120px;
+.team {
+  padding: 120px 0;
 }
 
 .services-item {
@@ -288,14 +291,26 @@ header {
 }
 
 .team-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
   border-radius: 0 0 4px 4px;
 }
 
-.team-info {
+.team-info,
+.portfolio-info {
   padding: 32px 16px;
 }
 
+.portfolio-card {
+  border: 1px solid var(--cornflower);
+  max-width: 360px;
+}
 
-
+.portfolio-group-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 96px;
+}
